@@ -11,3 +11,6 @@ print(summary(elec_data))
 #wadklj
 
 #jjhkasjhdk
+#pls merge line by line
+
+#pls merge line by line 2
