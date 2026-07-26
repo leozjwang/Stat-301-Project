@@ -5,12 +5,10 @@ library(broom)
 elec_data <- read.csv("complete_dataset.csv")
 print(summary(elec_data))
 
-# hjhkadjms
+elec_data$holiday <- as.factor(elec_data$holiday)
+elec_data$school_day <- as.factor(elec_data$school_day)
 
-#h jkanskjdhjka
-#wadklj
+fit <- lm(RRP ~ min_temperature + max_temperature + solar_exposure + rainfall + school_day + holiday, elec_data)
+print(tidy(fit))
 
-#jjhkasjhdk
-#pls merge line by line
-
-#pls merge line by line 2
+#test by leo
